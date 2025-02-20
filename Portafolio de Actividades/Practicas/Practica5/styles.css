@@ -1,0 +1,225 @@
+/* ===== RESET Y ESTILOS GENERALES ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url('fondoCielo.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-attachment: fixed; /* Mantiene la imagen fija */
+}
+
+
+.page-container {
+    width: 50%;
+    margin: auto;
+    background: #f70d83;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f70d83    ;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    position: relative;
+}
+
+
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.circulo-amarillo {
+    background-color: #f2c501;
+    border-radius: 50%;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===== TABLAS ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: #0000;
+    margin: 20px 0;
+    background-color: white; /* Fondo blanco */
+}
+
+th {
+    background-color: #30ded5;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    border-inline: solid 1px white;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    color: #30ded5; /* Color del texto de las celdas */
+    border: 1px solid #ddd;
+}
+
+/* Mantener color original en estos textos */
+
+.vix {
+    color: black !important;
+    font-weight: bold;
+}
+
+/* ===== SECCIONES ===== */
+.step1, .step2 {
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+h2 {
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+/* ===== DESCUENTO ===== */
+.discount {
+    background-color: #f70d83;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.highlight-text {
+    color: #f2c501;
+}
+
+/* ===== EXTRA INFO ===== */
+.extra {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.call {
+    font-weight: bold;
+    color: #f2c501;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact img {
+    width: 100px;
+}
+
+.phone {
+    font-weight: bold;
+    font-size: 18px;
+    color: #f70d83;
+}
+
+.term {
+    font-size: 12px;
+}
+
+/* ===== TABLAS CON BORDES REDONDEADOS ===== */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0; /* Eliminar separación entre celdas */
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Redondear solo las esquinas superiores de los encabezados */
+th {
+    background-color: #1ab8b0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Redondear solo las esquinas inferiores de la última fila */
+td {
+    padding: 10px;
+    text-align: center;
+    color: #16a19a;
+    border: 1px solid #ddd;
+}
+
+/* Aplicar bordes redondeados a las esquinas superiores de la tabla */
+table thead tr:first-child th:first-child {
+    border-top-left-radius: 15px;
+}
+table thead tr:first-child th:last-child {
+    border-top-right-radius: 15px;
+}
+
+/* Aplicar bordes redondeados a las esquinas inferiores de la tabla */
+table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+/* Estilos generales para la barra de navegación */
+.navbar {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 10px 10px;
+  }
+  
+  .navbar ul li a {
+    color: #ffffff; /* Color del texto del botón */
+    display: block;
+    background-color: #f70d83; /* Fondo blanco */
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #f2c501; /* Color de hover */
+}
+
+  
+  /* Puedes agregar aquí el resto de tus estilos para el contenido */
+  
