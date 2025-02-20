@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Centrada</title>
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            position: relative;
+            flex-direction: column;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        .button-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 400px;
+            padding: 0 20px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img src="image.png" alt="Imagen de un tablero de ajedrez">
+
+    <div class="button-container">
+        <button class="btn">Izquierda</button>
+        <button class="btn">Derecha</button>
+    </div>
+</body>
+</html>
+
+<script>
+document.addEventListener("keydown", function(event) {
+    let container = document.querySelector(".button-container");
+    let currentPosition = parseInt(window.getComputedStyle(container).left) || 0;
+
+    if (event.key === "ArrowLeft") {
+        container.style.left = (currentPosition - 20) + "px"; // Mueve a la izquierda
+    } else if (event.key === "ArrowRight") {
+        container.style.left = (currentPosition + 20) + "px"; // Mueve a la derecha
+    }
+});
+</script>
